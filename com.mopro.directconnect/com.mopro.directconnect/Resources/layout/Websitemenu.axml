@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headingview"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_alignParentLeft="true"
+            android:padding="14dp"
+            android:id="@+id/Backbutton"
+            android:src="@drawable/LeftArrow" />
+        <TextView
+            android:id="@+id/headingtext3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="SELECT PAGE"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/Donebutton"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="DONE"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <antistatic.spinnerwheel.WheelVerticalView
+            android:id="@+id/Spinner"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Selectedlayout"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/linecolor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="39dp"
+                android:background="@color/linecolor" />
+        </FrameLayout>
+       <!-- <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="25dp"
+                android:background="#08959DA7" />
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#08959DA7" />
+        </LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>

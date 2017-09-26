@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mike"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="-4dp"/>
+              <TextView
+                  android:id="@+id/welcomepulse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:minHeight="60dp"
+                    android:layout_marginLeft="42dp"
+         android:layout_alignParentTop="true"
+                    android:gravity="left|top"
+                    android:text="Welcome to Mopro's \nDirect Connect" />
+            </RelativeLayout>
+          <TextView
+                  android:id="@+id/welcomecontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:minHeight="30dp"
+                        android:lineSpacingExtra="0dp"
+                  android:lineSpacingMultiplier="0.9"
+                android:layout_marginTop="27dp"
+                android:gravity="left|center"
+                android:text="@string/welcomecontent" />
+          <TextView
+                    android:id="@+id/welcomecontent2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="14dp"
+              android:minHeight="30dp"
+                        android:lineSpacingExtra="0dp"
+                  android:lineSpacingMultiplier="0.9"
+              android:layout_marginTop="47dp"
+              android:gravity="left|center"
+              android:text="@string/welcomecontent2" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/ButtonGetstarted"
+                    style="@style/Buttonstyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/getstarted"
+                        android:textColor="@color/white"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/Transparent" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

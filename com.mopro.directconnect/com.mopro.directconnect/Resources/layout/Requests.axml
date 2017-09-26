@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/Backbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/LeftArrow"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="REQUESTS"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+  <ScrollView
+      android:id="@+id/Scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:layout_marginLeft="11dp"
+          android:layout_marginRight="11dp"
+          android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/Infolayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/requestbg">
+          <TextView
+              android:id="@+id/Infocount"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:gravity="center|bottom"
+              android:text="1"
+              android:textColor="@color/white"
+              android:textSize="35dp" />
+          <TextView
+              android:id="@+id/Infotext"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/white"
+              android:textSize="16dp"
+              android:gravity="center"
+              android:text="Need Info"
+              android:layout_marginTop="-5dp"
+              android:layout_below="@+id/Infocount" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Progresslayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/requestselectbg">
+          <TextView
+              android:id="@+id/Progresscount"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:gravity="center|bottom"
+              android:text="28"
+              android:textColor="@color/white"
+              android:textSize="35dp" />
+          <TextView
+              android:id="@+id/Progresstext"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/white"
+              android:textSize="16dp"
+              android:gravity="center"
+              android:text="In Progress"
+              android:layout_marginTop="-5dp"
+              android:layout_below="@+id/Progresscount" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Completedlayout"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/requestbg">
+          <TextView
+              android:id="@+id/Completedcount"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:gravity="center|bottom"
+              android:text="9"
+              android:textColor="@color/white"
+              android:textSize="35dp" />
+          <TextView
+              android:id="@+id/Completedtext"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:textColor="@color/white"
+              android:textSize="16dp"
+              android:gravity="center"
+              android:text="Completed"
+              android:layout_marginTop="-5dp"
+              android:layout_below="@+id/Completedcount" />
+        </RelativeLayout>
+      </LinearLayout>
+      <TextView
+          android:id="@+id/Bizheader"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:paddingTop="15dp"
+          android:textSize="11dp"
+          android:paddingBottom="8dp"
+          android:gravity="center"
+          android:text="We've resolved your requests an average 22.8 hour(s) ahead of schedule!"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/Filtertext"
+            style="@style/Edittextstyle"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FILTER :"
+            android:padding="0dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@color/Transparent" />
+        <TextView
+            android:id="@+id/Filtercontenttext"
+            style="@style/Edittextstyle"
+            android:layout_toRightOf="@+id/Filtertext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ALL"
+            android:padding="0dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@color/Transparent" />
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_toRightOf="@+id/Filtercontenttext"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dropdown"
+            android:tint="@color/white" />
+      </RelativeLayout>
+      <ListView
+          android:id="@+id/Listview"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:dividerHeight="8dp"
+          android:divider="@color/Transparent"
+          android:cacheColorHint="@color/Transparent"
+          android:listSelector="@drawable/Menubutclick" />
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

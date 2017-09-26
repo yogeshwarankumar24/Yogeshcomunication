@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/Backbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/LeftArrow"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="REQUEST DETAIL"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+      <TextView
+          android:id="@+id/Backtext"
+          android:layout_width="70dp"
+            android:visibility="gone"
+          android:layout_height="match_parent"
+          android:layout_alignParentTop="true"
+          android:layout_centerInParent="true"
+          android:layout_alignParentRight="true"
+          android:gravity="center"
+          android:text="Back"
+          android:textColor="@color/white"
+          android:textSize="14dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/Scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+          android:layout_marginBottom="80dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Biznotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Notes"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/white10" />
+            <TextView
+                android:id="@+id/Bizreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Reference Screen"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+              <ImageView
+                android:visibility="gone"
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+                  android:scaleType="fitXY" />
+                <RelativeLayout
+                    android:id="@+id/NoImagelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+                    android:background="@drawable/Imagebg">
+                    <ImageView
+                        android:id="@+id/Imageicon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/imageicon"
+                    android:layout_marginTop="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:id="@+id/Imagetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No Image"
+                    android:layout_marginTop="2dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/Imageicon" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/Entertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14dp"
+                    android:minHeight="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+                    android:gravity="left|center"
+                    android:text="Enter new text" />
+                <EditText
+                    android:id="@+id/EditNotes"
+                    style="@style/Edittextstyle"
+                    android:hint=""
+                    android:text="Change the title copy in the website HOME \npage"
+                    android:gravity="left|top"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+                <TextView
+                    android:id="@+id/EnterOthertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+                    android:textSize="14dp"
+                    android:minHeight="30dp"
+                    android:gravity="left|center"
+                    android:text="Any notes for the team?" />
+                <EditText
+                    android:id="@+id/EditOthernotes"
+                    style="@style/Edittextstyle"
+                    android:hint="(Optional)"
+                    android:text="Text change required"
+                    android:gravity="left|top"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+                    android:background="@drawable/Edittextbg2" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/Savelayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="-80dp"
+        android:background="@color/blacklight">
+        <Button
+            android:id="@+id/Submitbutton"
+            style="@style/Buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="SAVE CHANGES"
+            android:layout_marginTop="18dp"
+                    android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+          android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

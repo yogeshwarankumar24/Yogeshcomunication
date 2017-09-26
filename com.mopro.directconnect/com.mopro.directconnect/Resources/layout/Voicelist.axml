@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginRight="30dp"                
+                android:gravity="left|center"
+                android:text="" />
+          <ImageView
+                android:id="@+id/Searchnav"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/RightArrow"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true" />
+          <ImageView
+                android:id="@+id/Helpnav"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/help"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@color/linecolor" />
+</LinearLayout>

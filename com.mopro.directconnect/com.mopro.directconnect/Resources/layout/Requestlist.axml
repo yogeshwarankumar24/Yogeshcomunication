@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusableInTouchMode="false" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:background="@color/white10">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="15dp"
+          android:paddingRight="15dp"
+            android:background="@color/white10">
+        <TextView
+            android:id="@+id/Bizname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:gravity="left|center"
+            android:text="#FII-16121"/>
+        <TextView
+            android:id="@+id/Bizstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="On hold! Awaiting info"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:gravity="left|center"
+            android:background="@color/Transparent"
+                android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_toLeftOf="@+id/Bizstatus"
+            android:src="@drawable/sandglass"
+android:layout_centerInParent="true"
+            android:tint="@color/white" />
+      </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp">
+            <TextView
+                android:id="@+id/Bizlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                android:textSize="14dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Request Type : Copy" />
+          <TextView
+                android:id="@+id/Bizhome"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+              android:textSize="14dp"
+              android:layout_marginRight="40dp"
+              android:singleLine="true"
+              android:gravity="left|center"
+                            android:layout_toRightOf="@+id/Bizlocation"
+              android:text="On:  Home" />
+            <TextView
+                android:id="@+id/Bizwebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                android:textSize="14dp"
+                android:layout_marginRight="40dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Cancelled On: 06-18-2017 6:34 PM"
+                android:layout_below="@+id/Bizlocation" />
+          <TextView
+              android:id="@+id/Bizwebsite2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+              android:textSize="14dp"
+              android:layout_marginRight="40dp"
+              android:singleLine="true"
+              android:layout_marginBottom="10dp"
+              android:gravity="left|center"
+              android:text="Estimated Delivary On: 06-18-2017 6:34 PM"
+              android:layout_below="@+id/Bizwebsite" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/RightArrowLight"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

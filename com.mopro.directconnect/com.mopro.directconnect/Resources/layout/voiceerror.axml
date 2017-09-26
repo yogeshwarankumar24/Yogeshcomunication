@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/Backbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="14dp"
+            android:layout_marginLeft="-10dp"
+                android:src="@drawable/LeftArrow"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:id="@+id/contenttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sorry, we didn't find any matches."
+                android:layout_marginTop="65dp"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+          <Button
+              android:id="@+id/ButtonClear"
+              android:layout_width="wrap_content"
+              android:layout_height="24dp"
+              android:text="Clear"
+              android:gravity="center|right"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="right"
+              android:textSize="14dp"
+              android:textAllCaps="false"
+              android:textColor="@color/textcolor"
+              android:background="@color/Transparent" />
+            <Button
+                android:id="@+id/Buttontry"
+                style="@style/Buttonstyle"
+                android:text="TRY AGAIN"
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:id="@+id/ortext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Or"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/Buttonchat"
+                style="@style/Buttonstyle"
+                android:text="Connect to live chat" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

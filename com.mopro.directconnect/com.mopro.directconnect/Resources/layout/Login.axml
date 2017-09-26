@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/Appbackground" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+                <EditText
+                    android:id="@+id/EditPassword"
+                    style="@style/Edittextstyle"
+                    android:inputType="textPassword"
+                    android:hint="@string/password"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+                <EditText
+                    android:id="@+id/EditUsername"
+                    style="@style/Edittextstyle"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/uername"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/EditPassword" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="90dp"
+                    android:layout_above="@+id/EditUsername"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/logo" />
+                <RelativeLayout
+                    android:id="@+id/checkBoxlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/EditPassword"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:id="@+id/checkedtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:textSize="11dp"
+                        android:gravity="right|center"
+                        android:text="@string/checkboxtext" />
+                  <Button
+                      android:id="@+id/CheckRemember"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                  android:background="@drawable/uncheckbox"
+                        android:layout_toLeftOf="@+id/checkedtext" />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/ButtonLogin"
+                    style="@style/Buttonstyle"
+                    android:text="@string/logintext"
+                    android:layout_marginTop="34dp"
+                    android:layout_below="@+id/checkBoxlayout" />
+              <Button
+                  android:id="@+id/ButtonForget"
+                  style="@style/Buttonstyle"
+                  android:layout_width="wrap_content"
+                  android:text="@string/forgettext"
+                        android:textColor="@color/white"
+                    android:layout_marginBottom="30dp"
+                  android:textSize="12dp"
+                        android:layout_centerInParent="true"                  
+                        android:layout_alignParentBottom="true"
+                  android:background="@color/Transparent" />
+            </RelativeLayout>
+</RelativeLayout>

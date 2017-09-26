@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="Competition Tracker"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+      <ImageView
+          android:id="@+id/Backbutton"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:padding="14dp"
+          android:layout_marginLeft="-10dp"
+          android:src="@drawable/LeftArrow"
+          android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/Webview"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+    android:background="#464B51">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/liketext"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"        
+        android:gravity="center"
+        android:text="Was this helpful?"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <ImageView
+        android:id="@+id/unlikebutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/liketext"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/thumb_upimg"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/likebutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/unlikebutton"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/thumb_downimg"
+        android:layout_centerInParent="true" />
+    </RelativeLayout>
+  </RelativeLayout>
+</LinearLayout>

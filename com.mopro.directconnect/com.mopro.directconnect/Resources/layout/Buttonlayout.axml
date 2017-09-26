@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blacklight">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blacklight">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/Backbutton2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="14dp"
+            android:layout_marginLeft="-10dp"
+                android:src="@drawable/LeftArrow"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/headingtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+            android:paddingTop="4dp"
+                android:text="TEXT UPDATES"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:id="@+id/savedtext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Saved!"
+                android:layout_marginTop="75dp"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/ButtonAnother"
+                style="@style/Buttonstyle"
+                android:text="ADD ANOTHER"
+                android:background="@drawable/Buttonclick_orange"
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:id="@+id/ortext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="OR"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/ButtonSubmitteam"
+                style="@style/Buttonstyle"
+                android:text="SUBMIT TO THE TEAM" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

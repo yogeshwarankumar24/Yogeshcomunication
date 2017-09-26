@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/Backbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="14dp"
+      android:layout_marginLeft="-10dp"
+        android:src="@drawable/LeftArrow"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/headingtext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+            android:paddingTop="4dp"
+        android:text="FAQs"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+  </RelativeLayout>
+  <WebView
+      android:id="@+id/Webview"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#6f46a2</color>
+  <color name="colorPrimaryDark">#5c28dc</color>
+  <color name="colorAccent">#1b8cd7</color>
+  <color name="buttoncolor">#ff5722</color>
+  <color name="whitelight">#90FFFFFF</color>
+  <color name="white10">#20FFFFFF</color>
+  <color name="white">#FFFFFF</color>
+  <color name="textcolor">#CED3E0</color>
+  <color name="linecolor">#959DA7</color>
+    <color name="whitebg">#10000000</color>
+  <color name="blacklight">#85000000</color>
+  <color name="blacklight10">#30000000</color>
+  <color name="black">#000000</color>
+ 
+  <color name="green">#17cd7c</color>
+  <color name="orange">#FFA500</color>
+  <color name="darkorange">#E68700</color>
+  <color name="appbglight">#EEC8C8</color>
+  <color name="golden">#F1E3b6</color>
+  <color name="red">#ff0000</color>
+  <color name="Transparent">#00000000</color>
+</resources>

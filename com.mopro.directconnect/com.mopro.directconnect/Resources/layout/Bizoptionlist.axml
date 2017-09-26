@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white10">
+        <TextView
+            android:id="@+id/Bizname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:gravity="left|center"
+            android:text="Hard Rock Cafe (MP-183194)"
+            android:background="@color/white10" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Bizlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Location: " />
+          <TextView
+              android:id="@+id/Bizlocationtxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:paddingTop="10dp"
+          android:paddingLeft="0dp"
+              android:textSize="14dp"
+        android:layout_toRightOf="@+id/Bizlocation"
+              android:layout_marginRight="40dp"
+              android:singleLine="true"
+              android:gravity="left|center"
+              android:text="Las Vegas, Nevada" />
+            <TextView
+                android:id="@+id/Bizwebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:gravity="left|center"
+                android:text="Website: "
+                android:layout_below="@+id/Bizlocation" />
+          <TextView
+              android:id="@+id/Bizwebsitetxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:paddingTop="10dp"
+              android:paddingBottom="30dp"
+          android:paddingLeft="0dp"
+              android:textSize="14dp"
+              android:layout_marginRight="40dp"
+              android:singleLine="true"
+              android:gravity="left|center"
+              android:text="http://create.dev.cmlmediasoft...."
+              android:layout_below="@+id/Bizlocation"
+        android:layout_toRightOf="@+id/Bizwebsite" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/RightArrowLight"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

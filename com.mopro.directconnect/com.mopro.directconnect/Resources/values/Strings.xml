@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:statusBarColor">#000000</item>
+    <item name="android:windowBackground">@drawable/background</item>
+  </style>
+
+  <style name="AppThemeTransp" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+  </style>
+  <style name="DialogAnimation" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowBackground">@drawable/background</item>
+    <item name="android:statusBarColor">@color/black</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:windowEnterAnimation">@drawable/bottomtoup</item>
+    <item name="android:windowExitAnimation">@drawable/toptodown</item>
+  </style>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">DirectConnect</string>
+  <string name="uername">Email Address</string>
+  <string name="password">Password</string>
+  <string name="checkboxtext">Remember me</string>
+  <string name="logintext">LOG IN</string>
+  <string name="forgettext">FORGOT PASSWORD?</string>
+  <string name="userjoin">Please enter the email address you provided when joining Mopro.</string>
+  <string name="userexitsforget">Oops! guess you have entered incorrect password.\n\nPlease provide your email, if you would like to reset your password.</string>
+  <string name="emailid">Email Address</string>
+  <string name="sendlink">SEND RESET LINK</string>
+  <string name="cancel">Cancel</string>
+  <string name="sent">SENT!</string>
+  <string name="error">Error!</string>
+  <string name="invalidemail">Invalid Email. Please Try Again.</string>
+  <string name="invalidnamepassword">Invalid Username / Password. Please Try Again.</string>
+
+  <string name="getstarted">GET STARTED</string>
+  <string name="welcomecontent">Easily find the answers to your questions and request edits to your site. Either search by text or voice, chat with a member of our team, or plot your website edits directly in the app.</string>
+  <string name="welcomecontent2">Need help? A single click puts you in touch with our team.</string>
+  <string name="helpyou">How can we help you?</string>
+  <string name="selectbiz">SELECT YOUR BUSINESS</string>
+  <string name="introbutton">CONTACT THE TEAM</string>
+  <string name="introcontent">TAKE YOUR NEW\nSITE ONLINE AND\nGET ACCESS TO\nDIRECT CONNECT\nAND 24/7\nSUPPORT!\n</string>
+  <string name="changesite"><u>Change Site</u></string>
+
+
+  <declare-styleable name="CustomFonts">
+    <attr name="customFont" format="string" />
+  </declare-styleable>
+</resources>

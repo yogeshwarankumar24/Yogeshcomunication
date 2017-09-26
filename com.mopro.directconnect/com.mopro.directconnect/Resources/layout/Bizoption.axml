@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:textSize="18dp"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:text="@string/selectbiz" />
+      <TextView
+          android:id="@+id/headingname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:textSize="15dp"
+            android:minHeight="30dp"
+            android:gravity="center"
+            android:text="Welcome John Snow!" />
+        <ListView
+            android:id="@+id/Listview"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="8dp"
+            android:divider="@color/Transparent"
+            android:cacheColorHint="@color/Transparent"
+        android:listSelector="@drawable/Menubutclick" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          android:orientation="vertical">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/emailicon" />
+        <LinearLayout
+            android:id="@+id/Forgetscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+          <TextView
+              android:id="@+id/Forgetcontent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="14dp"
+              android:minHeight="40dp"
+              android:gravity="left|center"
+              android:layout_marginTop="15dp"
+              android:text="@string/userjoin" />
+          <EditText
+              android:id="@+id/EditEmailid"
+              style="@style/Edittextstyle"
+              android:inputType="text"
+              android:hint="@string/emailid"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="17dp" />
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/ButtonReset"
+                android:text="@string/sendlink"
+                style="@style/Buttonstyle"
+                android:layout_marginTop="18dp"/>
+            <Button
+                android:id="@+id/ButtonCancel"
+                style="@style/Buttonstyle"
+                android:layout_width="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginTop="8dp"
+                android:gravity="right|center"
+                        android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_below="@+id/ButtonReset"
+                android:layout_alignParentRight="true"
+                android:background="@color/Transparent" />
+          </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ForgetSucess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+          <TextView
+              android:id="@+id/Senttext"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="18dp"
+              android:gravity="left|center"
+              android:layout_marginTop="10dp"
+              android:text="@string/sent" />
+          <TextView
+            android:id="@+id/Sucesscontent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="14dp"
+              android:gravity="left|center"
+              android:layout_marginTop="10dp"
+              android:text="We've emailed a link to reset your password." />
+          <Button
+              android:id="@+id/ButtonLogin"
+              style="@style/Buttonstyle"
+              android:text="@string/logintext"
+              android:layout_marginTop="14dp" />
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+  </LinearLayout>
+</RelativeLayout>

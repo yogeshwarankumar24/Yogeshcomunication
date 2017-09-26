@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/menuLeftCenter"
+               android:layout_width="150dp"
+               android:layout_height="234dp">
+            <LinearLayout
+                android:id="@+id/Linearlayout3"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8dp">
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:layout_marginLeft="60dp"
+                  android:src="@drawable/Videoflat" />
+              <TextView
+                  android:id="@+id/Textview3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="VIDEO"
+                  android:paddingLeft="2dp"
+                  android:gravity="center|left"
+                  android:textColor="@color/white"
+                  android:textSize="12dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Linearlayout1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:rotation="-45"
+                android:layout_marginBottom="0dp"
+                android:layout_above="@+id/Linearlayout3">
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:rotation="45"
+                  android:layout_marginLeft="42dp"
+                  android:src="@drawable/Imageflat" />
+              <TextView
+                  android:id="@+id/Textview1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="IMAGE"
+                  android:rotation="15"
+                  android:paddingLeft="4dp"
+                  android:gravity="center|left"
+                  android:textColor="@color/white"
+                  android:textSize="12dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Linearlayout2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:rotation="-70"
+                android:layout_marginBottom="35dp"
+                android:layout_above="@+id/Linearlayout3">
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:rotation="70"
+                  android:src="@drawable/Textflat" />
+              <TextView
+                  android:id="@+id/Textview2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="TEXT"
+                  android:rotation="25"
+                  android:paddingLeft="4dp"
+                  android:gravity="center|left"
+                  android:textColor="@color/white"
+                  android:textSize="12dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Linearlayout4"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:rotation="45"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/Linearlayout3">
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:rotation="-45"
+                  android:layout_marginLeft="42dp"
+                  android:src="@drawable/Linkflat" />
+              <TextView
+                  android:id="@+id/Textview4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="BUTTON"
+                  android:rotation="0"
+                  android:paddingLeft="3dp"
+                  android:gravity="center|left"
+                  android:textColor="@color/white"
+                  android:textSize="12dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Linearlayout5"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:rotation="70"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/Linearlayout3">
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:rotation="-50"
+                  android:src="@drawable/Designflat" />
+              <TextView
+                  android:id="@+id/Textview5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="DESIGN"
+                  android:rotation="-10"
+                  android:paddingBottom="18dp"
+                  android:paddingLeft="2dp"
+                  android:gravity="center|left"
+                  android:textColor="@color/white"
+                  android:textSize="12dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true">
+              <TextView
+                  android:id="@+id/Textmenu"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:text="1"
+                  android:textColor="@color/white"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:layout_alignParentLeft="true"
+                  android:background="@drawable/Buttonflat" />
+              <ImageView
+                  android:id="@+id/Closemenu"
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"
+                  android:layout_alignParentLeft="true"
+                  android:background="@drawable/Closeflat" />
+            </RelativeLayout>
+          </RelativeLayout>
